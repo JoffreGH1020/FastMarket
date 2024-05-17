@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login FastMarket</title>
+
+<!-- Archivos de bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+        background: #f1c400;
+        background: linear-gradient(to right, #d1ab01, #ffe259);
+
+    }
+    .bg{
+        background-image: url(img/logoLogin.png);
+        background-position: center center;
+    }
+</style>
+</head>
+<body>
+    <div class="container w-7 bg-primary mt-5 rounded shadow">
+        <div class="row aling-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <!-- <div class="text-end">
+                    <img src="img/logo2.png" width="60" alt="">
+                </div> -->
+                <h2 class="font-weight-bold text-center py-5">
+                    Bienvenido
+                </h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email" id="">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password" id="">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="conectado" class="form-check-input">
+                        <label for="conectado" class="form-check-label">Mantenerme connectado</label>
+                    </div>
+                    <div class=" d-grid">
+                        <button type="submit" class="btn btn-primary btn-block " >Iniciar sesión</button>
+                        <a href="index.html" class="btn btn-primary btn-block">Regresar</a>
+                    </div>
+                    <div class="my-3">
+                        <span >¿No tienes cuenta? <a href="registro.html" class="font-weight-bold">Regístrate</a> </span> <br>
+                        <span><a href="#" class="font-weight-bold">Recuperar contraseña</a></span>
+                    </div>
+                </form>
+
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar sesión</div>
+                        
+                    </div>
+                    
+                    <div class="row my-2">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row aling-items-center">
+                                    <div class="col-1 d-none d-md-block">
+                                        <img src="img/logoFace.png" width="30" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row aling-items-center">
+                                    <div class="col-1 d-none d-md-block">
+                                        <img src="img/logoGoogle.png" width="30" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

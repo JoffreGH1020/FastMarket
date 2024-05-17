@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Master Store</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- ICONS: Line Awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Archivos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+    <style>
+        /* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 100%;
+            height: 620px;
+            margin: auto;
+        }
+        /* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
+        .carousel-control {
+            width: 10%;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="https://wa.me/974470653" class="float-whatsapp" target="_blank">
+        <img src="img/1wha.jpg" alt="WhatsApp">
+    </a>
+
+    <div class="hm-wrapper">
+
+        <!-- =================================
+           HEADER MENU
+        ================================== -->
+        <div class="hm-header">
+
+            <div class="container">
+                <div class="header-menu">
+
+                    <div class="hm-logo">
+                        <a href="index.html">
+                            <img src="img/logo3.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="hm-menu">
+                        <ul>
+                            <!-- <li><a href="http://">Promociones</a></li> -->
+                            <li><a href="index.html">Categorías</a></li>
+                            <li><a href="#productosdest">Productos populares</a></li>
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="sobreNost.html">Sobre Nosotros</a></li>
+                        </ul>
+
+                        <div class="hm-icon-cart">
+                            <a href="#">
+                                <i class="las la-shopping-cart"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+
+                        <div class="icon-menu">
+                            <button type="button"><i class="fas fa-bars"></i></button>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- =================================
+           HEADER MENU Movil
+        ================================== -->
+        <div class="header-menu-movil">
+            <button class="cerrar-menu"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="#Categorias">Productos</a></li>
+                <li><a href="#">Campañas</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+
+
+        <!-- =================================
+           BANNER
+        ================================== -->
+        <!-- <div class="hm-banner">
+            <div class="img-banner">
+                <img src="img/banner.jpg" alt="">
+            </div>
+            <a href=""></a>
+        </div> -->
+
+    
+        <div id="productosdest" class="hm-page-block bg-fondo">
+
+            <div class="container">
+
+                <div class="header-title" data-aos="fade-up">
+                    <h1>Horarios de Atención</h1>
+                </div>
+                <style>
+                    .schedule-table {
+                        width: 100%;
+                        margin: 20px 0;
+                        border-collapse: collapse;
+                        color: #4061ab;
+                    }
+                    .schedule-table th, .schedule-table td {
+                        border: 2px solid #4061ab;
+                        padding: 8px;
+                        text-align: center;
+                    }
+                    .schedule-table th {
+                        background-color: #f1c400;
+                        color: #4061ab;
+                    }
+                    .schedule-table tr:nth-child(even) {
+                        background-color: #fafafa;
+                       
+                    }
+                    .schedule-table tr:hover {
+                        background-color: #f0ca21;
+                    }
+                </style>
+                <div class="container mt-5">
+                    
+                    <table class="schedule-table table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Horario de Mañana</th>
+                                <th>Horario de Tarde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>09:00 - 13:00</td>
+                                <td>15:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>09:00 - 13:00</td>
+                                <td>15:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>09:00 - 13:00</td>
+                                <td>15:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>09:00 - 13:00</td>
+                                <td>15:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>09:00 - 13:00</td>
+                                <td>15:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>09:00 - 13:00</td>
+                                <td>Cerrado</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>Cerrado</td>
+                                <td>Cerrado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- TABS -->
+                <!-- CONTENIDO DE LOS TABS -->
+                <!-- Bebidas -->
+                
+
+            </div>
+
+
+        <!-- =================================
+           HOME CATEGROIAS
+        ================================== -->
+        <div id="Categorias" class="hm-page-block">
+            <div class="container">
+                <div class="header-title">
+                    <h1  data-aos="fade-up" data-aos-duration="3000">Nuestras Ubicaciones</h1>
+                </div>
+                <div class="container text-center">
+
+                </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                              <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.077557335811!2d-76.24067513080143!3d-9.927498917810704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c331cb5139cd%3A0x78e9618cbbc75f0f!2sFastmarket%20Huanuco!5e0!3m2!1ses-419!2spe!4v1715970169196!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <div class="card-body">
+                                <h5 class="card-title"><strong>Sede Central</strong> </h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <b>Direccion: </b> Jr. Dos de mayo 1398, Huánuco, Peru</li>
+                                    <li class="list-group-item">Nuestro corazón de operaciones, donde se gestiona la calidad y distribución de nuestros productos para garantizarte siempre lo mejor.</li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7808.492936697983!2d-77.0704295108309!3d-11.8879185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d118f9fcd179%3A0x19b861a594ac10ec!2sFastmarket!5e0!3m2!1ses-419!2spe!4v1715970906011!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <div class="card-body">
+                                <h5 class="card-title"><strong>Sucursal Norte</strong></h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <b>Direccion: </b> Puente Piedra 15121</li>
+                                    <li class="list-group-item">Perfecta para los residentes del norte de la ciudad, esta sucursal combina accesibilidad con una excelente atención al cliente.</li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.447132894336!2d-76.27217011284185!3d-9.9454561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c34359b01831%3A0x7ebff069c47780c5!2sFastmarket!5e0!3m2!1ses-419!2spe!4v1715971056313!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <div class="card-body">
+                                <h5 class="card-title"><strong>Tienda en el Sur</strong></h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> <b>Direccion: </b> Via Colectora Pillco Marca 126, Pillco Marca 10003</li>
+                                    <li class="list-group-item">En el vibrante distrito sur, esta tienda proporciona una selección completa de nuestros productos, asegurando que siempre tengas acceso a tus favoritos.</li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    
+
+                    
+
+
+               
+
+            </div>
+        </div>
+
+
+         <!-- =================================
+           HOME PRODUCTOS DESTACADOS
+        ================================== -->
+        
+        
+
+
+            
+        </div>
+
+
+
+         <!-- =================================
+           FOOTER
+        ================================== -->
+        <footer>
+            
+            <div class="container">
+
+                <div class="foo-row">
+                    <div class="foo-col">
+                        <h2>Suscríbete <br>a nuestro newsletter</h2>
+                        <form action="" method="GET">
+
+                            <div class="f-input">
+                                <input type="text" placeholder="Ingrese su correo">
+                                <button type="submit" class="hm-btn-round btn-primary"><i class="far fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="foo-col">
+                        <ul>
+                           <li><a href="http://">Productos</a></li>
+                           <li><a href="http://">Campañas</a></li>
+                           <li><a href="http://">Nosotros</a></li>
+                           <li><a href="http://">Contacto</a></li>
+                           <li><a href="http://">Enlace 01</a></li>
+                           <li><a href="http://">Enlace 02</a></li>
+                           <li><a href="http://">Enlace 03</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="foo-copy">
+            <div class="container">
+                <p>FastMarket © Todos los derechos reservados</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Animaciones : AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Mi Script -->
+    <script src="js/app.js"></script>
+
+    <script>
+    
+        AOS.init({
+            duration: 1200,
+        })
+
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
