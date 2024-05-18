@@ -32,7 +32,7 @@
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 100%;
-            height: 620px;
+            height: 530px;
             margin: auto;
         }
         /* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
@@ -71,8 +71,24 @@
                             <li><a href="#productosdest">Productos populares</a></li>
                             <!-- <li><a href="login.html">Iniciar sesión</a></li> -->
                             <li><a href="sobreNost.html">Sobre Nosotros</a></li>
+                            <!-- <li><button id="open-chatbot" class="">Chatea Conmigo</button></li> -->
+                            <button class="btn" id="open-chatbot">Chatea Conmigo</button>
                         </ul>
 
+
+                        <div class="chat-popup" id="chat-popup">
+                            <div class="chat-container">
+                                <div class="chat-header">
+                                    <h2>FastMarketBot</h2>
+                                    <span class="close" id="close-chatbot">&times;</span>
+                                </div>
+                                <div class="chat-box" id="chat-box"></div>
+                                <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+                                <button onclick="sendMessage()">Enviar</button>
+                            </div>
+                        </div>
+                    
+                        <script src="script.js"></script> 
 
                         <div class="hm-icon-cart">
                             <a href="#">
